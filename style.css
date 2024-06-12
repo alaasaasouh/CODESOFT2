@@ -1,0 +1,144 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding: 20px;
+    background: linear-gradient(45deg, #f3ec78, #af4261);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+
+section {
+    margin-bottom: 50px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.slide-in {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.fade-in-visible {
+    opacity: 1;
+}
+
+
+#about {
+    text-align: center;
+}
+
+#about img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+
+#skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+#skills li {
+    background: #ffcc00;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+#skills li:hover {
+    background: #ff9900;
+}
+
+
+#projects .project {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#projects .project img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+#resume {
+    text-align: center;
+}
+
+#resume a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+#resume a:hover {
+    background: #555;
+}
+
+#contact p {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
